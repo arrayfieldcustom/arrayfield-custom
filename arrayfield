@@ -1263,16 +1263,17 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 
 		end
 	end
-	Settings.KeySystem = true
-	Settings.KeySettings = {
-	  Title = "Framing script",
-	  Subtitle = "Key System",
-	  Note = "Private, no key for you!!",
-	  FileName = "what the fuck", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-	  SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-	  GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-	  Key = {"https://pastebin.com/raw/D7ahuizQ"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    Settings.KeySystem = true
+    Settings.KeySettings = {
+      Title = "Framing script",
+      Subtitle = "Key System",
+      Note = "Private, no key for you!!",
+      FileName = "what the fuck", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/D7ahuizQ"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
   }
+
 	if Settings.KeySystem then
 		if not Settings.KeySettings then
 			Passthrough = true
@@ -1388,7 +1389,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 					if KeyMain.Input.InputBox.Text== MKey then
 						KeyFound = true
 						FoundKey = MKey
-                    end end
+                    end
 				end
 			end
 				if KeyFound then
