@@ -1263,7 +1263,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 
 		end
 	end
-	  Settings.KeySystem = true
+	  Settings.KeySystem = false
   		Settings.KeySettings = {
 			Title = "Framing script",
 			Subtitle = "Key System",
